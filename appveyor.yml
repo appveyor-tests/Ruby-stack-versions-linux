@@ -8,7 +8,7 @@ stack:
   - ruby 2.5
 
 test_script:
--sh: |
+- sh: |
     command -v ruby
     ruby --version
     if [[ $(ruby --version 2>&1) =~ ruby\ ${APPVEYOR_STACK_RUBY} ]]; then

@@ -1,0 +1,18 @@
+stack:
+  - ruby 2.2
+  - ruby 2.3
+  - ruby 2.4
+  - ruby 2.5
+
+test_script:
+  -sh: |
+    command -v ruby
+    ruby --version
+    if [[ $(ruby --version 2>&1) =~ ruby\ ${APPVEYOR_STACK_RUBY} ]]; then
+        echo "Version is Correct"
+    else
+        echo "[ERROR] Version of Ruby is incorrect!" 1>&2;
+        exit 2;
+    fi
+
+build: off

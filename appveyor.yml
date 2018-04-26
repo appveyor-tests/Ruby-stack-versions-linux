@@ -5,7 +5,7 @@ stack:
   - ruby 2.2
   - ruby 2.3
   - ruby 2.4
-  - ruby 2.5
+  - ruby 2.5.0
 
 test_script:
 - sh: |

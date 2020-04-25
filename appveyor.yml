@@ -4,10 +4,7 @@ init:
  - sh: echo $APPVEYOR_BUILD_WORKER_IMAGE
  
 stack:
-  - ruby 2.2
-  - ruby 2.3
-  - ruby 2.4
-  - ruby 2.5
+  - %RUBY_STACK%
 
 test_script:
 - sh: |

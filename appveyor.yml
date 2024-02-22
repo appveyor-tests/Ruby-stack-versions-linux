@@ -2,7 +2,7 @@ init:
  - appveyor version
  - sh: echo $APPVEYOR_BUILD_WORKER_CLOUD
  - sh: echo $APPVEYOR_BUILD_WORKER_IMAGE
- - sh: curl -sL https://gist.githubusercontent.com/OwenMcDonnell/c63da7c5ba8508c219df01a503f57565/raw/a0818061d4ed484511485255f5bf8e1175de8a92/rvm > /var/tmp/rvm
+ - sh: curl -sL https://gist.githubusercontent.com/OwenMcDonnell/c63da7c5ba8508c219df01a503f57565/raw/76e6174531bb34b72730fdb15a14145bcf77b140/rvm > /var/tmp/rvm
  - sh: sudo cp /var/tmp/rvm /usr/bin/rvm
  - sh: sudo chmod +x /usr/bin/rvm
  - sh: ~/.rbenv/bin/rbenv versions

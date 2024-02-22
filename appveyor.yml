@@ -4,7 +4,7 @@ init:
  - sh: echo $APPVEYOR_BUILD_WORKER_IMAGE
  - sh: echo $PATH
  #- sh: export PATH=~/.rbenv/shims:$PATH
- - sh: curl -sL https://gist.githubusercontent.com/OwenMcDonnell/c63da7c5ba8508c219df01a503f57565/raw/457fca97be5cbea6a56334ca67efc1c4dc4d7853/rvm > /var/tmp/rvm
+ - sh: curl -sL https://gist.githubusercontent.com/OwenMcDonnell/c63da7c5ba8508c219df01a503f57565/raw/4e1556db5fe3b975d3cd3bc960586cf52649c893/rvm > /var/tmp/rvm
  - sh: sudo cp /var/tmp/rvm /usr/bin/rvm
  - sh: sudo chmod +x /usr/bin/rvm
  #- sh: ~/.rbenv/bin/rbenv versions

@@ -3,8 +3,8 @@ init:
  - sh: echo $APPVEYOR_BUILD_WORKER_CLOUD
  - sh: echo $APPVEYOR_BUILD_WORKER_IMAGE
  - sh: sudo sh -c "echo 'export PATH=~/.rbenv/shims:$PATH' > /etc/profile.d/test.sh"
- - sh: cat /etc/profile.d/test.sh
- - sh: source /etc/profile.d/test.sh
+ #- sh: cat /etc/profile.d/test.sh
+ #- sh: source /etc/profile.d/test.sh
  - sh: echo $PATH
  #- sh: export PATH=~/.rbenv/shims:$PATH
  - sh: curl -sL https://gist.githubusercontent.com/OwenMcDonnell/c63da7c5ba8508c219df01a503f57565/raw/4e1556db5fe3b975d3cd3bc960586cf52649c893/rvm > /var/tmp/rvm

@@ -7,7 +7,7 @@ init:
  - sh: source /etc/profile.d/test.sh
  - sh: echo $PATH
  #- sh: export PATH=~/.rbenv/shims:$PATH
- - sh: curl -sL https://gist.githubusercontent.com/OwenMcDonnell/c63da7c5ba8508c219df01a503f57565/raw/f12542ee9a527d7a300cb0b92a3763bf9d8f865c/rvm > /var/tmp/rvm
+ - sh: curl -sL https://gist.githubusercontent.com/OwenMcDonnell/c63da7c5ba8508c219df01a503f57565/raw/f595c764952321520573c258a68a897de1eb6308/rvm > /var/tmp/rvm
  - sh: sudo cp /var/tmp/rvm /usr/bin/rvm
  - sh: sudo chmod +x /usr/bin/rvm
  #- sh: ~/.rbenv/bin/rbenv versions

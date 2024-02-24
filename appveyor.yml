@@ -2,14 +2,14 @@ init:
  - appveyor version
  - sh: echo $APPVEYOR_BUILD_WORKER_CLOUD
  - sh: echo $APPVEYOR_BUILD_WORKER_IMAGE
- - sh: sudo sh -c "echo 'export PATH=~/.rbenv/shims:$PATH' > /etc/profile.d/test.sh"
- - sh: cat /etc/profile.d/test.sh
- - sh: source /etc/profile.d/test.sh
- - sh: echo $PATH
+ #- sh: sudo sh -c "echo 'export PATH=~/.rbenv/shims:$PATH' > /etc/profile.d/test.sh"
+ #- sh: cat /etc/profile.d/test.sh
+ #- sh: source /etc/profile.d/test.sh
+ #- sh: echo $PATH
  #- sh: export PATH=~/.rbenv/shims:$PATH
- - sh: curl -sL https://gist.githubusercontent.com/OwenMcDonnell/c63da7c5ba8508c219df01a503f57565/raw/b2622ca201c9f260fef529ee5f6f3c92329ab555/rvm > /var/tmp/rvm
- - sh: sudo cp /var/tmp/rvm /usr/bin/rvm
- - sh: sudo chmod +x /usr/bin/rvm
+ #- sh: curl -sL https://gist.githubusercontent.com/OwenMcDonnell/c63da7c5ba8508c219df01a503f57565/raw/b2622ca201c9f260fef529ee5f6f3c92329ab555/rvm > /var/tmp/rvm
+ #- sh: sudo cp /var/tmp/rvm /usr/bin/rvm
+ #- sh: sudo chmod +x /usr/bin/rvm
  #- sh: ~/.rbenv/bin/rbenv versions
 install:
  - sh: echo $PATH
